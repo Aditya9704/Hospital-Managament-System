@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Add New Patient</h2>
+<form method="POST">
+    <input name="name" placeholder="Name" required><br>
+    <input name="age" type="number" placeholder="Age" required><br>
+    <input name="gender" placeholder="Gender" required><br>
+    <input name="contact" placeholder="Contact" required><br>
+    <input name="address" placeholder="Address" required><br>
+    <input name="disease" placeholder="Disease/Symptoms" required><br>
+    <input name="doctor" placeholder="Doctor Name" required><br>
+    <input name="status" placeholder="Status (Admitted/Discharged)" required><br>
+    <button type="submit">Add Patient</button>
+</form>
+{% endblock %}
